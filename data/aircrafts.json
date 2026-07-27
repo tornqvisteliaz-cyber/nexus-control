@@ -1,0 +1,70 @@
+[
+  {
+    "id": "ac-001",
+    "name": "SkyHawk Executive",
+    "model": "NX-450",
+    "price": 12500000,
+    "description": "A sleek mid-size private jet designed for business travel. Features spacious cabin, advanced avionics, and exceptional range for transcontinental flights.",
+    "image": "https://images.unsplash.com/photo-1540962351504-030cfe4f3f1b?w=800",
+    "trailerUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "category": "Private Jet",
+    "status": "available",
+    "specs": {
+      "range": "4,200 nm",
+      "seats": 8,
+      "speed": "Mach 0.85",
+      "year": 2024
+    }
+  },
+  {
+    "id": "ac-002",
+    "name": "AeroVista Ultra",
+    "model": "AV-900",
+    "price": 28500000,
+    "description": "Ultra-long-range luxury jet with full bedroom suite, conference room, and gourmet galley. Perfect for global executives.",
+    "image": "https://images.unsplash.com/photo-1474302770737-173a6f31c244?w=800",
+    "trailerUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "category": "Luxury Jet",
+    "status": "available",
+    "specs": {
+      "range": "7,500 nm",
+      "seats": 14,
+      "speed": "Mach 0.90",
+      "year": 2025
+    }
+  },
+  {
+    "id": "ac-003",
+    "name": "Horizon Trainer",
+    "model": "HT-200",
+    "price": 450000,
+    "description": "Advanced single-engine trainer aircraft ideal for flight schools and private pilots. Reliable, fuel-efficient, and equipped with modern glass cockpit.",
+    "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800",
+    "trailerUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "category": "Trainer",
+    "status": "available",
+    "specs": {
+      "range": "800 nm",
+      "seats": 2,
+      "speed": "180 kts",
+      "year": 2023
+    }
+  },
+  {
+    "id": "ac-004",
+    "name": "Nimbus Cargo",
+    "model": "NC-600",
+    "price": 8900000,
+    "description": "Versatile cargo aircraft for regional freight. Large payload capacity, short-field performance, and robust design for demanding operations.",
+    "image": "https://images.unsplash.com/photo-1556388158-158df279f0b8?w=800",
+    "trailerUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "category": "Cargo",
+    "status": "available",
+    "specs": {
+      "range": "2,100 nm",
+      "seats": 2,
+      "speed": "320 kts",
+      "year": 2024
+    }
+  }
+]

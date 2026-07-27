@@ -1,0 +1,13 @@
+{
+  "name": "nexus-control",
+  "version": "1.0.0",
+  "description": "Nexus Control - Aircraft Marketplace, Newsletters & Admin Dashboard",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["aircraft", "marketplace", "newsletter", "admin"],
+  "author": "Nexus Control",
+  "license": "MIT"
+}

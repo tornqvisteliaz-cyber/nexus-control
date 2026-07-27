@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ord-001",
+    "aircraftId": "ac-003",
+    "aircraftName": "Horizon Trainer",
+    "customerName": "Alex Rivera",
+    "email": "alex.rivera@email.com",
+    "phone": "+1-555-0101",
+    "address": "123 Aviation Blvd, Seattle, WA 98101",
+    "total": 450000,
+    "status": "confirmed",
+    "date": "2026-07-15T10:30:00Z",
+    "paymentMethod": "Bank Transfer",
+    "notes": "Flight school purchase"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "nl-001",
+    "title": "Welcome to Nexus Control",
+    "content": "Discover the future of aviation with our exclusive collection of aircraft. From private jets to trainers, we bring the sky closer to you. Stay tuned for new arrivals and exclusive offers.",
+    "date": "2026-07-01T09:00:00Z",
+    "author": "Nexus Team"
+  },
+  {
+    "id": "nl-002",
+    "title": "New Arrival: AeroVista Ultra",
+    "content": "We are proud to introduce the AeroVista Ultra – our flagship ultra-long-range luxury jet. With a range of 7,500 nautical miles and unmatched comfort, redefine your travel experience.",
+    "date": "2026-07-10T14:00:00Z",
+    "author": "Nexus Team"
+  }
+]
