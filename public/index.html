@@ -6,104 +6,98 @@
   <title>Nexus Control</title>
   <link rel="stylesheet" href="/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div id="app" class="app-shell">
+  <div id="app" class="shell">
 
-    <!-- LEFT SIDEBAR -->
+    <!-- SIDEBAR -->
     <aside class="sidebar" id="sidebar">
-      <div class="sidebar-brand" onclick="navigate('home')">
-        <div class="brand-icon">✈</div>
-        <div class="brand-text">
-          <span class="brand-name">Nexus</span>
-          <span class="brand-sub">Control</span>
+      <div class="brand" onclick="nav('dashboard')">
+        <div class="brand-logo">✈</div>
+        <div>
+          <div class="brand-name">Nexus</div>
+          <div class="brand-sub">Control</div>
         </div>
       </div>
 
-      <nav class="sidebar-nav">
-        <div class="nav-section">
-          <a class="nav-item active" data-page="home" href="#">
-            <span class="nav-icon">⌂</span> Home
-          </a>
-          <a class="nav-item" data-page="aircrafts" href="#">
-            <span class="nav-icon">✈</span> Aircraft
-          </a>
-          <a class="nav-item" data-page="trailers" href="#">
-            <span class="nav-icon">▶</span> Trailers
-          </a>
-          <a class="nav-item" data-page="newsletter" href="#">
-            <span class="nav-icon">✉</span> Newsletter
-          </a>
+      <nav class="nav">
+        <div class="nav-group">
+          <button class="nav-btn active" data-page="dashboard">
+            <span class="ni">⌂</span> Dashboard
+          </button>
+          <button class="nav-btn" data-page="products">
+            <span class="ni">✈</span> My Products
+          </button>
+          <button class="nav-btn" data-page="trailers">
+            <span class="ni">▶</span> Trailers
+          </button>
+          <button class="nav-btn" data-page="newsletter">
+            <span class="ni">✉</span> Newsletter
+          </button>
         </div>
 
-        <div class="nav-section">
-          <div class="nav-label">My Library</div>
-          <a class="nav-item" data-page="orders" href="#">
-            <span class="nav-icon">📦</span> My Orders
-          </a>
-          <a class="nav-item" data-page="admin" href="#">
-            <span class="nav-icon">⚙</span> Admin Panel
-          </a>
+        <div class="nav-group">
+          <div class="nav-label">Library</div>
+          <button class="nav-btn" data-page="orders">
+            <span class="ni">📦</span> My Orders
+          </button>
+          <button class="nav-btn" data-page="admin">
+            <span class="ni">⚙</span> Admin
+          </button>
         </div>
       </nav>
 
-      <div class="sidebar-footer">
-        <div class="hot-pick" id="hot-pick">
-          <div class="hot-pick-label">Today's Hot Pick</div>
-          <div class="hot-pick-title">Loading...</div>
-          <button class="btn-sm-outline" onclick="navigate('aircrafts')">Discover</button>
+      <div class="sidebar-bottom">
+        <div class="hot">
+          <div class="hot-label">Hot Pick</div>
+          <div class="hot-title" id="hot-title">—</div>
         </div>
       </div>
     </aside>
 
-    <!-- MAIN AREA -->
-    <div class="main-area">
+    <!-- MAIN -->
+    <div class="main">
       <header class="topbar">
         <div class="topbar-left">
-          <button class="sidebar-toggle" id="sidebar-toggle">☰</button>
-          <div class="top-tabs" id="top-tabs">
-            <button class="top-tab active" data-page="home">Home</button>
-            <button class="top-tab" data-page="aircrafts">Aircraft</button>
-            <button class="top-tab" data-page="trailers">Trailers</button>
-            <button class="top-tab" data-page="newsletter">Newsletter</button>
+          <button class="menu-btn" id="menu-btn">☰</button>
+          <div class="tabs" id="tabs">
+            <button class="tab active" data-page="dashboard">Dashboard</button>
+            <button class="tab" data-page="products">My Products</button>
+            <button class="tab" data-page="trailers">Trailers</button>
+            <button class="tab" data-page="newsletter">Newsletter</button>
           </div>
         </div>
         <div class="topbar-right">
-          <div class="search-box">
-            <span class="search-icon">⌕</span>
-            <input type="text" id="search-input" placeholder="Search aircraft..." />
+          <div class="search">
+            <span>⌕</span>
+            <input id="search" type="text" placeholder="Search products..." />
           </div>
-          <button class="icon-btn" id="cart-btn" title="Cart">
-            🛒 <span class="cart-count" id="cart-count">0</span>
+          <button class="cart-btn" id="cart-btn">
+            🛒 <span id="cart-n">0</span>
           </button>
         </div>
       </header>
 
-      <main class="content" id="main-content">
-      </main>
+      <div class="page" id="page"></div>
     </div>
 
-    <!-- CART DRAWER -->
-    <div class="cart-drawer" id="cart-drawer">
-      <div class="cart-header">
-        <h3>Cart</h3>
-        <button class="icon-btn" id="close-cart">✕</button>
+    <!-- CART -->
+    <div class="cart" id="cart">
+      <div class="cart-h">
+        <strong>Cart</strong>
+        <button id="cart-close">✕</button>
       </div>
-      <div class="cart-items" id="cart-items"></div>
-      <div class="cart-footer">
-        <div class="cart-total">
-          <span>Total</span>
-          <strong id="cart-total">$0</strong>
-        </div>
-        <button class="btn-primary btn-block" id="checkout-btn">Checkout</button>
+      <div class="cart-body" id="cart-body"></div>
+      <div class="cart-f">
+        <div class="cart-total"><span>Total</span><b id="cart-total">$0</b></div>
+        <button class="btn primary block" id="checkout">Checkout</button>
       </div>
     </div>
-    <div class="cart-overlay" id="cart-overlay"></div>
-
+    <div class="overlay" id="overlay"></div>
   </div>
 
-  <div id="toast-container"></div>
+  <div id="toasts"></div>
   <script src="/app.js"></script>
 </body>
 </html>
